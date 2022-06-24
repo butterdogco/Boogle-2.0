@@ -1,0 +1,180 @@
+@import url('fonts/GoogleSans-Regular.ttf');
+
+body {
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    list-style-type: none;  
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+    }
+
+  @keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    background-color: #000000;
+  }
+  100% {
+    opacity: 1;
+    background-color: rgb(54, 54, 54);
+   } 
+  } 
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    color: rgb(184, 184, 184);
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+  .apps{
+    height:23px;
+    position:relative;
+    bottom:7px;
+    background: none;
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.2s ease;
+    right: 3px;
+  }
+  .apps:hover {
+      background-color: #4e4e4e;
+      padding: 5px;
+  }
+  .signinbutton{
+    background-color: #4885ed;
+    color: #fff;
+    border:none;
+    border-radius:3px;
+    padding:7px 10px;
+    position:relative;
+    bottom:7px;
+    font-weight:bold;
+    margin-right: 10px;
+    margin-top: 7.5px;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  .signinbutton:hover {
+      text-decoration: none;
+      background-color: #6295ec;
+  }
+  
+  .logo{
+      margin-top: 50px;
+      margin-bottom: 10px;
+  }
+  .bar{
+    margin:0 auto;
+    width:575px;
+    border-radius:30px;
+    border:1px solid #5a5a5a;
+    transition: 0.2s ease;
+    position: inline;
+  }
+  form {
+    position: inline;
+    margin: 0;
+  }
+  .bar:hover{
+    box-shadow: 1px 1px 8px 1px #797979;
+  }
+  .bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #797979;
+    outline:none;
+    /* width: 600px; */
+  }
+  .searchbar{
+    height:45px;
+    border:none;
+    width:500px;
+    font-size:16px;
+    outline: none;
+    font-family: 'Google Sans', sans-serif;
+  }
+  
+  .voice{
+    height:20px;
+    position:inline-block;
+    top:5px;
+    left:10px;
+  }
+  .buttons{
+    margin-top:30px;
+  }
+  .button{
+    background-color: #535353;
+    border:none;
+    color:#dddddd;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Google Sans', sans-serif;
+  }
+  .button:hover{
+    border: 1px solid #5e5e5e;
+    padding: 9px 19px;
+    color:#c7c7c7;
+    border: 1px solid #5a5a5a
+  }
+  .button:focus{
+    border:1px solid #b8b8b8;
+    padding: 9px 19px;
+  }
+  
+  .icon {
+      top:5px;
+      left:10px;
+      display: flex;
+      position: relative;
+      height: 35px;
+      justify-content: space-between;
+      float: left;
+  }
+  
+  .right{
+      float: right;
+      padding: 6px 12px;
+  }
+  
+  .left{
+      float: left;
+      padding: 6px 12px ;
+      color: #808080;
+  }
+  .left, .right {
+      display: inline;  
+      font-size: 20px;
+      color: #808080;
+  }
+  .footer{
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background-color: #464646;
+      height: 50px;
+      color: #808080;
+  }
+  input {
+    background: none;
+    color: rgb(192, 192, 192);
+  }
