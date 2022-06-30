@@ -25,7 +25,10 @@ body {
   li {
     float: right;
   }
-  
+  .dark-mode {
+    height: 25px;
+    width: 25px;
+  }
   li a {
     color: #000;
     display: block;
@@ -102,13 +105,7 @@ body {
     outline: none;
     font-family: 'Google Sans', sans-serif;
   }
-  
-  .voice{
-    height:20px;
-    position:inline-block;
-    top:5px;
-    left:10px;
-  }
+
   .buttons{
     margin-top:30px;
   }
