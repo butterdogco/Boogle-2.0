@@ -1,0 +1,66 @@
+/* Unapproved use of this code should not be allowed, but I'm not going to copyright this. So it'll just piss us off lol*/
+
+@import url('fonts/Kollektif.ttf');
+
+body {
+    font-family: 'Kollektif', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    height: 200vh;
+    }
+
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        margin-top: 50vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 1vh;
+    }
+    }
+    .toplogo  {
+        width: 110px;
+        height: 45px;
+    }
+    .toptext {
+        font-size: 48px;
+        margin-top: 200px;
+    }
+    .toptext p {
+        display: inline;
+    }
+    header p {
+        display: inline;
+        font-size: 34px;
+        font-family: 'Kollektif', sans-serif;
+    }
+    header a {
+        text-decoration: none;
+    }
+    .apps-btn {
+        padding: 16px 40px 16px 40px;
+        background-color:rgb(94, 94, 255);
+        border-radius: 8px;
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.2s ease-in-out;
+    }
+    .apps-btn:hover {
+        background-color:rgb(58, 58, 158);
+    }
+    .bottom, .bottom a {
+        margin-top: 64vh;
+        font-size: 16px;
+        text-decoration: none;
+        transition: 0.4s ease-in-out;
+    }
+    .bottom a:hover {
+        font-size: 17px;
+    }
