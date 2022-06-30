@@ -11,7 +11,7 @@ body {
     animation-fill-mode: forwards;
     color: rgb(39, 39, 39);
     text-decoration: none;
-    height: 200vh;
+    height: 255vh;
     }
 
     @keyframes fadeInAnimation {
@@ -38,7 +38,6 @@ body {
     header p {
         display: inline;
         font-size: 34px;
-        font-family: 'Kollektif', sans-serif;
     }
     header a {
         text-decoration: none;
@@ -56,11 +55,25 @@ body {
         background-color:rgb(58, 58, 158);
     }
     .bottom, .bottom a {
-        margin-top: 64vh;
+        margin-top: 44vh;
         font-size: 16px;
         text-decoration: none;
         transition: 0.4s ease-in-out;
     }
     .bottom a:hover {
         font-size: 17px;
+    }
+    .changelog {
+        margin-top: 300px;
+    }
+    .changelog .title {
+        font-size: 60px;
+    }
+    .changelog .subtitle {
+        font-size: 30px;
+        margin-top: -60px;
+    }
+    .changelog .item {
+        font-size: 16px;
+        margin-top: -20px;
     }
