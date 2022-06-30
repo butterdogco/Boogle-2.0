@@ -14,7 +14,7 @@ body {
   @keyframes fadeInAnimation {
   0% {
     opacity: 0;
-    background-color: #000000;
+    background-color: #FFFFFF;
   }
   100% {
     opacity: 1;
@@ -40,6 +40,10 @@ body {
   }
   li a:hover {
     text-decoration: underline;
+  }
+  .light-mode {
+    height: 25px;
+    width: 25px;
   }
   .apps{
     height:23px;
