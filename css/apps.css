@@ -22,7 +22,10 @@ header .toplogo {
     height: 40px;
 }
 .apps {
-    display: inline;
+    display: inline-block;
+}
+.app-frame {
+    display: inline-block;
 }
 .apps .title {
     font-size: 38px;
