@@ -23,6 +23,7 @@ header .toplogo {
 }
 .apps {
     display: inline-block;
+    margin-top: -30px;
 }
 .app-frame {
     display: inline-block;
