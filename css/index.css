@@ -97,6 +97,10 @@ body {
     outline:none;
     /* width: 600px; */
   }
+  .searchmain {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
   .searchbar{
     height:45px;
     border:none;
