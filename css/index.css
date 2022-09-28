@@ -20,6 +20,12 @@ body {
   .autocomplete {
     position: relative;
   }
+  .autocomplete-items {
+    cursor: pointer;
+  }
+  .autocomplete-items:hover {
+    background-color: #c8c8c8;
+  }
   ul {
     list-style-type: none;
     overflow: hidden;
