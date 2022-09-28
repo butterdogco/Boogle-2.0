@@ -17,6 +17,9 @@ body {
     opacity: 1;
    } 
   } 
+  .autocomplete {
+    position: relative;
+  }
   ul {
     list-style-type: none;
     overflow: hidden;
