@@ -32,7 +32,7 @@ body {
 }
 
 .autocomplete-items:hover {
-  background-color: #c8c8c8;
+  background-color:  rgb(74, 74, 74);
 }
 
 ul {
