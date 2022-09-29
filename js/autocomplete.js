@@ -96,7 +96,7 @@ function autocomplete(inp, arr) {
   }
 
   /*This is the stuff that autocompletes*/
-  var countries = ["Calculator", "Whats the time", "Whats the date", "How  to read", "How to type", "Color picker", "Boogle", "Google", "Wikabedia", "ButterTube", "ButterFlix", "Bulu", "Apps", "Butter Plus"];
+  var countries = ["Calculator", "Whats the time", "Whats the date", "How  to read", "How to type", "Color picker", "Boogle", "Google", "Wikabedia", "ButterTube", "ButterFlix", "Bulu", "Apps", "Butter Plus", "Butterfiy", "Butterfly", "Spotify", "Music", "Entertainment", "ButterOS", "Bbay", "Webstore"];
 
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("myInput"), countries);
