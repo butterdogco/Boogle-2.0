@@ -1,2 +1,2 @@
 # What's Boogle?
-Boogle is an epic search engine that is maintained by 12 - 14 year olds. Yes, really. And is currently being updated almost every day.
+Boogle is the worlds best search engine, no doubt about it. It it maintained by middle schoolers (soon to be high schoolers). Make this your default search engine because it is abolutely amazing.
