@@ -26,7 +26,7 @@
     <div class="bar">
       <img class="icon" src="https://boogle.butterdogco.com/img/magnifying_glass.webp">
       <form autocomplete="off" method="get" action="https://search.butterdogco.com/_/search?query=">
-        <div class="autocomplete">
+        <div class="autocomplete" onkeypress="checkSubmit()">
           <input id="myInput" class="searchbar" type="search" name="query" title="Search Boogle" />
         </div>
     </div>
@@ -50,6 +50,15 @@
 
 <!-- Autocomplete -->
 <script src="js/autocomplete.js"></script>
+
+<!-- Enter to Search -->
+<script>
+  function checkSubmit(e) {
+   if(e && e.keyCode == 13) {
+      document.forms[0].submit();
+   }
+  }
+</script>
 
 </body>
 
