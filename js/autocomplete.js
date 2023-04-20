@@ -1,4 +1,55 @@
-function autocomplete(inp, arr) {
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://boogle.butterdogco.com/css/index.css">
+  <link rel="icon" href="https://boogle.butterdogco.com/img/boogle_square.png">
+  <title>Boogle</title>
+  <meta name="description" content="boogle, the best search engine">
+  <meta name="keywords" content="butterdog, butterdogco, butter dog co, bdog, bdogco, butterdogco.github.io, butterdogco.com, butterflix, bulu, buttertube, boogle, boogle search, boogle search engine, epic search engine, google rip off">
+  <meta name="author" content="ButterDogCo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<center>
+  <header>
+    <ul>
+      <li><a class="signinbutton" href="#">Sign in</a></li>
+      <li><a href="https://butterdogco.com/apps"><img class="apps" src="https://boogle.butterdogco.com/img/apps.webp" title="Boogle apps"></a></li>
+      <li><a href="images">Images</a></li>
+      <li><a href="https://mail.google.com">Bmail</a></li>
+    </ul>
+  </header>
+  <div class="searchmain">
+    <div class="logo">
+      <img alt="Boogle" src="https://boogle.butterdogco.com/img/boogle.png" style="height: 150px;">
+    </div>
+    <div class="bar">
+      <img class="icon" src="https://boogle.butterdogco.com/img/magnifying_glass.webp">
+      <form autocomplete="off" method="get" action="https://search.butterdogco.com/_/search?query=">
+        <div class="autocomplete">
+          <input id="myInput" class="searchbar" type="search" name="query" title="Search Boogle" onkeypress="checkSubmit()" />
+        </div>
+    </div>
+    <div class="buttons">
+      <button class="button" type="submit">Boogle Search</button>
+      </form>
+      <a href="https://search.butterdogco.com/_/search?query=how%20to&scope=site&showTabs=false" class="button"
+        type="button">I'm Feeling Lucky</a>
+    </div>
+  </div>
+</center>
+<div class="footer">
+  <li class="left"><a href="about">About</a></li>
+  <li class="left"><a href="https://butterdogco.com/advertising">Advertising</a></li>
+  <li class="left"><a href="about">How Search works</a></li>
+  <li class="right"><a href="themes">Themes</a></li>
+  <li class="right"><a href="https://search.butterdogco.com/tos">Terms</a></li>
+  <li class="right"><a href="https://search.butterdogco.com/pp">Privacy</a></li>
+</div>
+
+<!-- Autocomplete and enter to search -->
+<script>
+  function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
   var currentFocus;
@@ -54,13 +105,6 @@ function autocomplete(inp, arr) {
       currentFocus--;
       /*and and make the current item more visible:*/
       addActive(x);
-    } else if (e.keyCode == 13) {
-      /*If the ENTER key is pressed, prevent the form from being submitted,*/
-      e.preventDefault();
-      if (currentFocus > -1) {
-        /*and simulate a click on the "active" item:*/
-        if (x) x[currentFocus].click();
-      }
     }
   });
   function addActive(x) {
@@ -96,13 +140,13 @@ function autocomplete(inp, arr) {
 }
 
 /*This is the stuff that autocompletes*/
-var countries = ["calculator", "chats the time", "whats the date", "how  to read", "how to type", "color picker", "boogle", "google", "wikabedia", "buttertube", "butterflix", "bulu", "apps", "butter plus", "butterfiy", "butterfly", "spotify", "music", "entertainment", "butter os", "bbay", "webstore", "bweeter", "bik bok", "OOGA BOOGA", "boblox", "memes", "how light works", "how to change themes on boogle", "change themes boogle", "blue theme boogle", "boogle.com", "boogle", "sussy balls"];
+var countries = ["calculator", "chats the time", "whats the date", "how  to read", "how to type", "color picker", "boogle", "google", "wikabedia", "buttertube", "butterflix", "bulu", "apps", "butter plus", "butterfiy", "butterfly", "spotify", "music", "entertainment", "butter os", "bbay", "webstore", "bweeter", "bik bok", "OOGA BOOGA", "boblox", "memes", "how light works", "how to change themes on boogle", "change themes boogle", "blue theme boogle", "boogle.com", "boogle", "sussy balls","how to read"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
 
-function checkSubmit(e) {
-  if (e && e.keyCode == 13) {
-    document.forms[0].submit();
-  }
-}
+</script>
+
+</body>
+
+</html>
