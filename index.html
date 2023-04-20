@@ -6,7 +6,8 @@
   <link rel="icon" href="https://boogle.butterdogco.com/img/boogle_square.png">
   <title>Boogle</title>
   <meta name="description" content="boogle, the best search engine">
-  <meta name="keywords" content="butterdog, butterdogco, butter dog co, bdog, bdogco, butterdogco.github.io, butterdogco.com, butterflix, bulu, buttertube, boogle, boogle search, boogle search engine, epic search engine, google rip off">
+  <meta name="keywords"
+    content="butterdog, butterdogco, butter dog co, bdog, bdogco, butterdogco.github.io, butterdogco.com, butterflix, bulu, buttertube, boogle, boogle search, boogle search engine, epic search engine, google rip off">
   <meta name="author" content="ButterDogCo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,7 +15,8 @@
   <header>
     <ul>
       <li><a class="signinbutton" href="#">Sign in</a></li>
-      <li><a href="https://butterdogco.com/apps"><img class="apps" src="https://boogle.butterdogco.com/img/apps.webp" title="Boogle apps"></a></li>
+      <li><a href="https://butterdogco.com/apps"><img class="apps" src="https://boogle.butterdogco.com/img/apps.webp"
+            title="Boogle apps"></a></li>
       <li><a href="images">Images</a></li>
       <li><a href="https://mail.google.com">Bmail</a></li>
     </ul>
@@ -26,8 +28,9 @@
     <div class="bar">
       <img class="icon" src="https://boogle.butterdogco.com/img/magnifying_glass.webp">
       <form autocomplete="off" method="get" action="https://search.butterdogco.com/_/search?query=">
-        <div class="autocomplete" onkeypress="checkSubmit()">
-          <input id="myInput" class="searchbar" type="search" name="query" title="Search Boogle" />
+        <div class="autocomplete">
+          <input id="myInput" class="searchbar" type="search" name="query" title="Search Boogle"
+            onkeypress="checkSubmit()" />
         </div>
     </div>
     <div class="buttons">
@@ -47,18 +50,8 @@
   <li class="right"><a href="https://search.butterdogco.com/pp">Privacy</a></li>
 </div>
 
-
-<!-- Autocomplete -->
-<script src="js/autocomplete.js"></script>
-
-<!-- Enter to Search -->
-<script>
-  function checkSubmit(e) {
-   if(e && e.keyCode == 13) {
-      document.forms[0].submit();
-   }
-  }
-</script>
+<!-- Autocomplete and enter to search -->
+<script src="https://boogle.butterdogco.com/js/autocomplete.js"></script>
 
 </body>
 
