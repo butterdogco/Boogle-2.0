@@ -123,6 +123,15 @@ form {
   /* width: 600px; */
 }
 
+.searchmain {
+  max-width: 80vw;
+  min-width: 80vw;
+  transform: translate(-50%,-50%);
+  top: 45%;
+  left: 50%;
+  position: fixed;
+}
+
 .searchbar {
   height: 45px;
   border: none;
