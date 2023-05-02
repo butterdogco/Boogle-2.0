@@ -2,19 +2,39 @@
 <html>
 
 <head>
-    <title>Select a theme - Boogle</title>
-    <link rel="icon" type="shortcut icon" href="img/boogle_square.png">
+    <title>Themes - Boogle</title>
+    <link rel="icon" type="shortcut icon" href="https://boogle.butterdogco.com/img/boogle_square.png">
     <meta name="description" content="boogle theme select">
-    <meta name="keywords" content="butterdog, butterdogco, butter dog co, bdog, bdogco, butterdogco.github.io, butterdogco.com, butterflix, bulu, buttertube, boogle, boogle search, boogle search engine, epic search engine, google rip off">
+    <meta name="keywords"
+        content="butterdog, butterdogco, butter dog co, bdog, bdogco, butterdogco.github.io, butterdogco.com, butterflix, bulu, buttertube, boogle, boogle search, boogle search engine, epic search engine, google rip off">
     <meta name="author" content="ButterDogCo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
         body {
             background-color: rgb(41, 41, 41);
             color: white;
             font-weight: bold;
-            margin-top: 38vh;
             font-family: 'Roboto', sans-serif;
+            animation: fadeIn 0.5s ease;
+        }
+
+        center {
+            position: fixed;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 25vh;
         }
 
         a {
@@ -30,22 +50,87 @@
             margin-right: 10px;
             transition: 0.2s ease;
         }
+
         a:hover {
             background-color: rgb(100, 100, 100);
         }
+
         h1 {
-            margin-bottom: 70px;
+            font-size: 5vh;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            top: -30%;
+            left: 50%;
+
         }
+
+        .theme {
+            width: 240px;
+            border-radius: 50px;
+            height: 240px;
+            background-color: rgb(60, 60, 60);
+            margin: 10px;
+            display: inline-flex;
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+
+        .theme:hover {
+            filter: brightness(80%);
+            width: 320px;
+        }
+
+        .theme img {
+            width: 90%;
+            height: 90%;
+            padding: 5%;
+            object-fit: contain;
+        }
+
+        #light {
+            background-color: white;
+        }
+
+        #blue {
+            background-image: url('https://beta.icloud.com/system/icloud.com/current/static/wallpaper.webp');
+            background-size: 210%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #dark {}
     </style>
 </head>
 
 <body>
     <center>
         <h1>Select a theme</h1>
-        <a href="../">Light</a>
-        <a href="blue">Blue</a>
-        <a href="dark">Dark</a>
+        <div class="theme" id="light" onclick="light()">
+            <img src="https://boogle.butterdogco.com/img/boogle.png">
+        </div>
+        <div class="theme" id="blue" onclick="blue()">
+            <img src="https://boogle.butterdogco.com/img/boogle-dark.png">
+        </div>
+        <div class="theme" id="dark" onclick="dark()">
+            <img src="https://boogle.butterdogco.com/img/boogle-dark.png">
+        </div>
     </center>
+
+    <script>
+        function light() {
+            window.location.href = "https://boogle.butterdogco.com"
+        }
+
+        function blue() {
+            window.location.href = "https://boogle.butterdogco.com/blue"
+        }
+
+        function dark() {
+            window.location.href = "https://boogle.butterdogco.com/dark"
+        }
+
+    </script>
 </body>
 
 </html>
+<!-- The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. Students begin at the starting line. Once the test begins, the running speed starts slowly, but gets faster each minute after you hear the signal (beep). A single lap (length of the basketball court), should be completed when you hear this signal (ding). The second time you fail to complete a lap before the sound, your test is over. -->
