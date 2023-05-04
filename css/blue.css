@@ -1,0 +1,232 @@
+@import url('https://boogle.butterdogco.com/fonts/GoogleSans-Regular.ttf');
+    
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@import url('fonts/GoogleSans-Regular.ttf');
+
+body {
+  font-family: 'Google Sans', sans-serif;
+  margin: 0;
+  list-style-type: none;
+  height: 99vh;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-image: url('https://beta.icloud.com/system/icloud.com/current/static/wallpaper.webp');
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  background-size: cover;
+}
+
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-items {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.light-mode {
+  height: 25px;
+  width: 25px;
+}
+
+.apps {
+  height: 23px;
+  position: relative;
+  bottom: 7px;
+  background: none;
+  border-radius: 15px;
+  padding: 5px;
+  transition: 0.2s ease;
+  right: 3px;
+  filter: brightness(300%);
+}
+
+.apps:hover {
+  background-color: rgba(200, 200, 255, 0.5);
+  padding: 5px;
+}
+
+.signinbutton {
+  background-color: #4885ed;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 10px;
+  position: relative;
+  bottom: 7px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 7.5px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.signinbutton:hover {
+  text-decoration: none;
+  background-color: #6295ec;
+}
+
+.logo {
+  margin-bottom: 0px;
+}
+
+.bar {
+  margin: 0 auto;
+  width: 575px;
+  border-radius: 30px;
+  border: 1px solid rgba(200, 200, 255, 0.5);
+  transition: 0.2s ease;
+  position: inline;
+  background-color: rgba(200, 200, 255, 0.5);
+}
+
+form {
+  position: inline;
+  margin: 0;
+}
+
+.bar:hover {
+  box-shadow: 1px 1px 8px 1px rgba(200, 200, 255, 0.5);
+}
+
+.bar:focus-within {
+  box-shadow: 1px 1px 8px 1px rgba(200, 200, 255, 0.5);
+  outline: none;
+  /* width: 600px; */
+}
+
+.searchmain {
+  max-width: 80vw;
+  min-width: 80vw;
+  transform: translate(-50%,-50%);
+  top: 45%;
+  left: 50%;
+  position: fixed;
+}
+
+.searchbar {
+  height: 45px;
+  border: none;
+  width: 500px;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.voice {
+  height: 20px;
+  position: inline-block;
+  top: 5px;
+  left: 10px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.button {
+  background-color: rgba(200, 200, 255, 0.5);
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Google Sans', sans-serif;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  border: 1px solid rgba(200, 200, 255, 0.9);
+  padding: 9px 19px;
+  color: rgb(230, 230, 230);
+}
+
+.button:focus {
+  border: 1px solid rgba(200, 200, 255, 0.5);
+  padding: 9px 19px;
+}
+
+.icon {
+  top: 5px;
+  left: 10px;
+  display: flex;
+  position: relative;
+  height: 35px;
+  justify-content: space-between;
+  float: left;
+}
+
+.right {
+  float: right;
+  padding: 6px 12px;
+}
+
+.left {
+  float: left;
+  padding: 6px 12px;
+  color: rgba(200, 200, 255, 0.5);
+}
+
+.left,
+.right {
+  display: inline;
+  font-size: 20px;
+  color: rgba(200, 200, 255, 0.5);
+}
+
+.footer {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(150, 180, 255, 1);
+  height: 50px;
+  color: rgba(200, 200, 255, 0.5);
+}
+
+input {
+  background: none;
+  color: white;
+}
+.main {
+  height: 98vh;
+  background-color: rgba(200, 200, 255, 0.5);
+  padding-top: 0.7vh;
+  margin-top: -0.7vh;
+}
