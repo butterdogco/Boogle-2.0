@@ -89,7 +89,7 @@ function autocomplete(inp, arr) {
 }
 
 /*This is the stuff that autocompletes*/
-var searchterms = ["calculator", "whats the time", "whats the date", "how  to read", "how to type", "color picker", "boogle", "google", "wikabedia", "buttertube", "butterflix", "bulu", "apps", "butter plus", "butterfiy", "butterfly", "spotify", "music", "entertainment", "butter os", "bbay", "webstore", "bweeter", "bik bok", "OOGA BOOGA", "boblox", "memes", "how light works", "how to change themes on boogle", "change themes boogle", "blue theme boogle", "boogle.com", "boogle", "sussy balls","how to read","what's the time","what's the date","how to do math", "how to math", "how do math", "math", "youtube","google","butterfarm","drogle","drogipedia"];
+var searchterms = ["calculator", "whats the time", "whats the date", "how  to read", "how to type", "color picker", "boogle", "google", "wikabedia", "buttertube", "butterflix", "bulu", "apps", "butter plus", "butterfiy", "butterfly", "spotify", "music", "entertainment", "butter os", "bbay", "webstore", "bweeter", "bik bok", "OOGA BOOGA", "boblox", "memes", "how light works", "how to change themes on boogle", "change themes boogle", "blue theme boogle", "boogle.com", "boogle", "sussy balls","how to read","what's the time","what's the date","how to do math", "how to math", "how do math", "math", "youtube","google","butterfarm","drogle","drogipedia","minecraft","buttercraft"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), searchterms);
