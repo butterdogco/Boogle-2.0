@@ -1,2 +1,2 @@
 # What's Boogle?
-Boogle is the worlds best search engine, no doubt about it. It it maintained by middle schoolers (soon to be high schoolers). Make this your default search engine because it is abolutely amazing.
+Boogle is the worlds best search engine, no doubt about it. Make this your default search engine because it is abolutely amazing.
