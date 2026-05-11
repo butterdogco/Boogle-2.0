@@ -3,10 +3,8 @@
 
 <head>
     <title>Themes - Boogle</title>
-    <link rel="icon" type="shortcut icon" href="https://butterdogco.github.io/Boogle-2.0/img/boogle_square.png">
+    <link rel="icon" type="shortcut icon" href="./img/boogle_square.png">
     <meta name="description" content="boogle theme select">
-    <meta name="keywords"
-        content="butterdog, butterdogco, butter dog co, bdog, bdogco, butterdogco.github.io, butterdogco.com, butterflix, bulu, buttertube, boogle, boogle search, boogle search engine, epic search engine, google rip off">
     <meta name="author" content="ButterDogCo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -92,14 +90,7 @@
         }
 
         #blue {
-            background-image: url('https://beta.icloud.com/system/icloud.com/current/static/wallpaper.webp');
-            background-size: 210%;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        #dark {
-            
+            background-color: #7bb2d4;
         }
     </style>
 </head>
@@ -108,29 +99,30 @@
     <center>
         <h1>Select a theme</h1>
         <div class="theme" id="light" onclick="light()">
-            <img src="https://butterdogco.github.io/Boogle-2.0/img/boogle.png">
+            <img src="./img/boogle.png">
         </div>
         <div class="theme" id="blue" onclick="blue()">
-            <img src="https://butterdogco.github.io/Boogle-2.0/img/boogle-dark.png">
+            <img src="./img/boogle-dark.png">
         </div>
         <div class="theme" id="dark" onclick="dark()">
-            <img src="https://butterdogco.github.io/Boogle-2.0/img/boogle-dark.png">
+            <img src="./img/boogle-dark.png">
         </div>
     </center>
 
     <script>
+        // Why the HELL are these not hyperlinks
+
         function light() {
-            window.location.href = "https://butterdogco.github.io/Boogle-2.0"
+            window.location.href = "./"
         }
 
         function blue() {
-            window.location.href = "https://butterdogco.github.io/Boogle-2.0/blue"
+            window.location.href = "./blue"
         }
 
         function dark() {
-            window.location.href = "https://butterdogco.github.io/Boogle-2.0/dark"
+            window.location.href = "./dark"
         }
-
     </script>
 </body>
 
