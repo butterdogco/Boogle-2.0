@@ -193,7 +193,7 @@ export const specialResults = [
   {
     triggers: ["google", "bing", "other search engines"],
     action: () => {
-      return "<p>Erm...</p><h2>ButterDog Search is better probably</h2>";
+      return "<p>Erm...</p><h2>ButterDog Search / Boogle or whatever the hell it's called is better probably</h2>";
     }
   },
   {
@@ -212,6 +212,12 @@ export const specialResults = [
     triggers: ["nick"],
     action: () => {
       return "is fat"
+    }
+  },
+  {
+    triggers: ["hyundai venue", "hyundai", "venue"],
+    action: () => {
+      return "<img src=\"./img/results/hyundaivenue.gif\" width=\"300\" alt=\"Hyundai Venue GIF\">";
     }
   }
 ];
