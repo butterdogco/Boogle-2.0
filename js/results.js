@@ -96,6 +96,14 @@ export const results = [
     autocompletions: ["online game hub", "massive game hub", "butterdog game hub", "gaming platform"]
   },
   {
+    name: "Discord",
+    url: "https://discord.com/",
+    description: "Step up your game with a modern voice & text chat app. Crystal clear voice, predatory moderation, mobile apps, and more.",
+    icon: "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/62fddf0fde45a8baedcc7ee5_847541504914fd33810e70a0ea73177e%20(2)-1.png",
+    keywords: ["chat", "messaging", "voice", "video", "community", "discord"],
+    autocompletions: ["discord", "chat platform", "messaging app", "voice and video communication"]
+  },
+  {
     name: "Dog AI",
     url: "https://dogai.butterdogco.com/",
     description: "Dog AI is an absolutely genius super smart Einstein AI that can chat",
@@ -118,6 +126,22 @@ export const results = [
     icon: "https://www.google.com/favicon.ico",
     keywords: ["search", "engine", "google", "web", "information"],
     autocompletions: ["google", "search engine", "search the web", "web search"]
+  },
+  {
+    name: "Greenville | Play on Roblox",
+    url: "https://www.roblox.com/games/891852901/",
+    description: "🏡 🚗 Greenville is one of the biggest, most realistic car & roleplay games on Roblox, with hundreds of cars of all types for you to choose and drive! Set in a small American town, Greenville is the perfect place to drive your favorite cars and roleplay with friends!",
+    icon: "https://www.roblox.com/favicon.ico",
+    keywords: ["roblox", "game", "roleplay", "car", "driving", "greenville"],
+    autocompletions: ["greenville roblox game", "roblox roleplay game", "driving game on roblox", "car game on roblox"]
+  },
+  {
+    name: "Greenville, Wisconsin Wiki | Fandom",
+    url: "https://greenville-wisconsin.fandom.com/wiki/Greenville,_Wisconsin_Wiki",
+    description: "This wiki is about the famous role-playing Roblox game Greenville, created by Milk74180. Players can customize and buy their dream cars, interactively work, role-play with friends, drive around the city of Greenville and the small towns of Horton and Brookmere, and more!",
+    icon: "https://static.wikia.nocookie.net/greenville-wisconsin/images/4/4a/Site-favicon.ico/revision/latest?cb=20240402131033",
+    keywords: ["wiki", "roblox", "greenville", "fandom", "role-playing", "game"],
+    autocompletions: ["greenville wiki", "roblox role-playing game", "fandom wiki", "greenville roblox"]
   },
   {
     name: "Roblox",
