@@ -158,14 +158,22 @@ li a {
 }
 
 .logo {
-  background-image: url('../img/boogle.png');
+  /* background-image: url('../img/boogle.png');
   background-size: contain;
   background-repeat: no-repeat;
-  aspect-ratio: 358/150;
+  aspect-ratio: 358/150; */
+  overflow: hidden;
+
+  &::before {
+    content: 'ButterDog Search';
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+  }
 }
 
 [data-theme="dark"] .logo {
-  background-image: url('../img/boogle-white.png');
+  /* background-image: url('../img/boogle-white.png'); */
 }
 
 .searchBar {
