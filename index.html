@@ -1,55 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <title>ButterDog Search</title>
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="icon" href="./img/boogle_square.png">
-  <title>Boogle</title>
-  <meta name="description" content="boogle, the best search engine">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="A really fire search engine">
+  <meta name="keywords" content="search engine, search, butterdog, butterdog search">
   <meta name="author" content="ButterDogCo">
+  <meta name="canonical" content="https://search.butterdogco.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<center>
+
+<body class="fadeIn">
   <header>
     <ul>
-      <li><a class="signinbutton" href="#">Sign in</a></li>
-      <li><a href="https://butterdogco.com/applications"><img class="apps" src="./img/apps.webp" title="Boogle apps"></a></li>
-      <li><a href="./images">Images</a></li>
-      <li><a href="https://mail.google.com">Bmail</a></li>
+      <li>
+        <a href="https://butterdogco.com/applications" title="ButterDogCo Applications" class="iconButton">
+          <span class="icon material-symbols-rounded">apps</span>
+          <span class="title">Apps</span>
+        </a>
+      </li>
+      <li>
+        <button onclick="window.invertTheme()" title="Toggle light/dark mode" class="iconButton">
+          <span class="icon material-symbols-rounded">contrast</span>
+        </button>
+      </li>
     </ul>
   </header>
-  <div class="searchmain">
-    <div class="logo">
-      <img alt="Boogle" src="./img/boogle.png" style="height: 150px;">
-    </div>
-    <div class="bar">
-      <img class="icon" src="./img/magnifying_glass.webp">
-      <form autocomplete="off" method="get" action="https://sites.google.com/search/butter-dog-search?query=">
-        <div class="autocomplete">
-          <input id="myInput" class="searchbar" type="search" name="query" title="Search Boogle"
-            onkeypress="checkSubmit()" />
-        </div>
-    </div>
-    <div class="buttons">
-      <button class="button" type="submit">Boogle Search</button>
+
+  <main>
+    <div class="logo"></div>
+
+    <div class="searchBar">
+      <span class="icon material-symbols-rounded">search</span>
+      <form autocomplete="off" class="autocomplete" action="./search" method="get">
+        <input class="input" id="searchInput" type="search" name="query" title="Search" placeholder="Search..." required>
+        <div id="autocomplete-list" class="autocomplete-items"></div>
       </form>
-      <a href="https://sites.google.com/search/butter-dog-search?query=how%20to&scope=site&showTabs=false" class="button"
-        type="button">I'm Feeling Lucky</a>
     </div>
-  </div>
-</center>
-<div class="footer">
-  <li class="left"><a href="./about">About</a></li>
-  <!-- <li class="left"><a href="https://b-dog.co/advertising">Advertising</a></li> -->
-  <li class="left"><a href="./about">How Search works</a></li>
-  <li class="right"><a href="./themes">Themes</a></li>
-  <li class="right"><a href="https://butterdogco.com/tos">Terms</a></li>
-  <li class="right"><a href="https://butterdogco.com/pp">Privacy</a></li>
-</div>
 
-<!-- Autocomplete and enter to search -->
-<script src="./js/autocomplete.js"></script>
+    <ul class="buttons">
+      <!-- <li>
+        <button class="iconButton" title="Image search">
+          <span class="icon material-symbols-rounded">image</span>
+          <span class="title">Images</span>
+        </button>
+      </li> -->
+      <li>
+        <button class="iconButton" title="Random search" onclick="window.randomSearch()">
+          <span class="icon material-symbols-rounded">casino</span>
+          <span class="title">I'm Feeling Lucky</span>
+        </button>
+      </li>
+    </ul>
+  </main>
 
+  <footer>
+    <ul>
+      <li><a href="./about">About</a></li>
+      <li><a href="./about#search">How Search Works</a></li>
+      <li><a href="https://butterdogco.com">ButterDogCo</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="https://butterdogco.com/terms">Terms</a></li>
+      <li><a href="https://butterdogco.com/privacy">Privacy</a></li>
+    </ul>
+  </footer>
+
+  <script src="./js/autocomplete.js" type="module"></script>
+  <script src="./js/theme.js" type="module"></script>
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>

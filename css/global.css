@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps,casino,contrast,image,light_mode,mail,search');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  /* Light theme */
+  --light-background-color: #fff;
+  --light-text-color: #000;
+  --light-text-color-secondary: #808080;
+  --light-link-color: #1a0dab;
+  --light-link-hover-color: #551a8b;
+  --light-element-background-color: #e2e2e2;
+  --light-element-background-color-hover: #bebebe;
+  --light-element-border-color: #d1d1d1;
+  --light-element-border-color-hover: #b0b0b0;
+  --light-element-shadow-small: 2px 2px 4px #0000003d;
+  --light-element-shadow-medium: 2px 4px 8px #00000046;
+
+  /* Dark theme */
+  --dark-background-color: #363636;
+  --dark-text-color: #fff;
+  --dark-text-color-secondary: #b0b0b0;
+  --dark-link-color: #8ab4f8;
+  --dark-link-hover-color: #a8c0ff;
+  --dark-element-background-color: #ffffff23;
+  --dark-element-background-color-hover: #ffffff34;
+  --dark-element-border-color: #ffffff2f;
+  --dark-element-border-color-hover: #ffffff3d;
+  --dark-element-shadow-small: 2px 2px 4px #ffffff2f;
+  --dark-element-shadow-medium: 2px 4px 8px #ffffff3d;
+
+  /* Active values */
+  --background-color: var(--light-background-color);
+  --text-color: var(--light-text-color);
+  --text-color-secondary: var(--light-text-color-secondary);
+  --link-color: var(--light-link-color);
+  --link-hover-color: var(--light-link-hover-color);
+  --element-background-color: var(--light-element-background-color);
+  --element-background-color-hover: var(--light-element-background-color-hover);
+  --element-border-color: var(--light-element-border-color);
+  --element-border-color-hover: var(--light-element-border-color-hover);
+  --element-shadow-small: var(--light-element-shadow-small);
+  --element-shadow-medium: var(--light-element-shadow-medium);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--dark-background-color);
+  --text-color: var(--dark-text-color);
+  --text-color-secondary: var(--dark-text-color-secondary);
+  --link-color: var(--dark-link-color);
+  --link-hover-color: var(--dark-link-hover-color);
+  --element-background-color: var(--dark-element-background-color);
+  --element-background-color-hover: var(--dark-element-background-color-hover);
+  --element-border-color: var(--dark-element-border-color);
+  --element-border-color-hover: var(--dark-element-border-color-hover);
+  --element-shadow-small: var(--dark-element-shadow-small);
+  --element-shadow-medium: var(--dark-element-shadow-medium);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica', 'Roboto', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button,
+input {
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+li a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+
+  &:not(.iconButton):hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+  }
+}
+
+.fadeIn {
+  animation: fadeInAnimation ease 1s;
+}
+
+.iconButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 24px;
+  background-color: var(--element-background-color);
+  border: 1px solid var(--element-border-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--element-background-color-hover);
+    border-color: var(--element-border-color-hover);
+    box-shadow: var(--element-shadow-small);
+
+    .icon {
+      font-variation-settings: 'FILL' 1;
+    }
+  }
+}
+
+.material-symbols-rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+
+  &::selection {
+    background: none;
+  }
+}
+
+.logo {
+  background-image: url('../img/boogle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 358/150;
+}
+
+[data-theme="dark"] .logo {
+  background-image: url('../img/boogle-white.png');
+}
+
+.searchBar {
+  display: flex;
+  padding: 0 8px;
+  border-radius: 23.5px;
+  border: 1px solid var(--element-border-color);
+  background-color: var(--element-background-color);
+  transition: 0.2s ease;
+
+  &:hover,
+  &:focus-within {
+    border-color: var(--element-border-color-hover);
+  }
+
+  &:hover {
+    box-shadow: var(--element-shadow-small);
+  }
+
+  &:focus-within {
+    outline: none;
+    box-shadow: var(--element-shadow-medium);
+  }
+
+  .icon {
+    aspect-ratio: 1/1;
+    height: 35px;
+    margin-top: 5px;
+  }
+
+  .input {
+    height: 45px;
+    width: 500px;
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .autocomplete-items {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background: none;
+      text-align: left;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      &:hover,
+      &.focused {
+        background-color: var(--element-background-color-hover);
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--element-background-color);
+  color: var(--text-color);
+  padding: 14px;
+  border-top: 1px solid var(--element-border-color);
+
+  ul {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  footer a {
+    font-size: 0.8rem;
+  }
+}
